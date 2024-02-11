@@ -1,0 +1,85 @@
+
+.main-parent {
+    position: relative;
+}
+
+.main-parent .sidenav-parent {
+    display: block;
+}
+
+.main-parent .image-parent {
+    display: block;
+}
+
+.floating-bar {
+    display: none; /* Hide the floating bar by default */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+  
+.floating-bar .bar-item {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    background-color: #333;
+    border: none;
+}
+
+/* Modal Style */
+
+.modal-fullscreen {
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    max-width: none !important;
+}
+  
+.modal-fullscreen .modal-dialog {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+}
+
+.modal-fullscreen .modal-content {
+    height: 100% !important;
+    border-radius: 0 !important;
+}
+
+
+
+@media screen and (max-width: 980px) {
+
+    .main-parent .sidenav-parent {
+        display: none;
+    }
+
+    .main-parent .image-parent {
+        opacity: 0.8;
+    }
+
+    .floating-bar {
+        display: flex;
+    }
+
+    .bar-item:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+      
+    .bar-item:last-child {
+        border-top-right-radius: 8px; 
+        border-bottom-right-radius: 8px;
+    }
+
+    .bar-item .icon {
+        margin-left: 2px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+}
